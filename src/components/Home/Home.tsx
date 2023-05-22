@@ -1,5 +1,5 @@
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import HeroImage from "../../assets/image.jpg";
+import HeroImage from "../../assets/image.png";
 import { useScrollToComponentContext } from "../../contexts/useScrollToComponentContext";
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
             data-aos="slide-right"
             className={`text-4xl sm:text-5xl font-bold text-center text-[#fca61f] dark:text-[#4db5ff]`}
           >
-            Tsowa Kolo Felix
+            Oluwatobi Abiodun
           </h2>
           <p
             data-aos="slide-right"
@@ -22,8 +22,7 @@ const Home = () => {
             data-aos-duration="1000"
             className="text-gray-500 dark:text-white max-w-md text-center mt-5 px-5"
           >
-            Frontend Developer | React JS | React Native | UI/UX & Graphic |
-            Figma | Wordpress or WIX Designer with producting Quality work
+            Backend Developer | Node JS | MongoDB | Express JS | AWS
           </p>
 
           <div

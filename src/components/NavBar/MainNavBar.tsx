@@ -16,9 +16,7 @@ function MainNavBar({ setNav, nav }: any) {
         <h1
           className="text-5xl ml-2 cursor-pointer"
           onClick={toggleShowOtherSideBar}
-        >
-          FKT
-        </h1>
+        ></h1>
       </div>
 
       <ul className="hidden md:flex">

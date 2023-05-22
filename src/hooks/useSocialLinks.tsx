@@ -1,7 +1,7 @@
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-// import resume from "../assets/resume.pdf";
+import resume from "../assets/resume.png";
 import { useAppContext } from "../contexts/useAppContext";
 import { SocialLinksType } from "../types/SocialLinksType";
 
@@ -19,7 +19,7 @@ function useSocialLinks() {
           />
         </>
       ),
-      href: "https://www.linkedin.com/in/felixnt001/",
+      href: "https://www.linkedin.com/in/oluwatobi-abiodun-1751201b2/",
       style: "rounded-tr-md",
     },
     {
@@ -33,7 +33,7 @@ function useSocialLinks() {
           />
         </>
       ),
-      href: "https://github.com/felixnt0",
+      href: "https://github.com/tobidun",
     },
     {
       id: 3,
@@ -46,7 +46,7 @@ function useSocialLinks() {
           />
         </>
       ),
-      href: "mailto:tsowafelix0@gmail.com",
+      href: "mailto:tobidun5@gmail.com",
     },
     {
       id: 4,
@@ -59,7 +59,7 @@ function useSocialLinks() {
           />
         </>
       ),
-      href: "https://twitter.com/felixnt001",
+      href: "https://twitter.com/Brighty61233593",
       style: "rounded-br-md",
     },
     {
@@ -73,7 +73,7 @@ function useSocialLinks() {
           />
         </>
       ),
-      href: "resume",
+      href: resume,
       download: true,
     },
   ];

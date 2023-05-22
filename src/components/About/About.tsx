@@ -27,10 +27,11 @@ const About = () => {
             className="text-xl mt-5 dark:text-white text-black"
           >
             Hi there, I'm{" "}
-            <span style={{ color: "tomato" }}>Felix Kolo Tsowa</span> - a
-            Front-End Developer. I develop beautiful and user-friendly websites.
-            I like what I’m currently doing (Web Development! and App
-            Development!…).
+            <span style={{ color: "tomato" }}>Oluwatobi Abiodun</span> - a
+            Backend Developer. I develop beautiful and user-friendly websites
+            with mind blowing functionalities. I can integrate third party APIs
+            to websites and i can do cloud computing. I like what I’m currently
+            doing (Web Development! and App Development!…).
           </p>
 
           <br />
@@ -50,8 +51,8 @@ const About = () => {
             and <span style={{ color: "teal" }}>easygoing</span> person with a
             good sense of humour.
             <br /> <br />I enjoy designing new stuff and learning new
-            Technologies. If I'm not on my computer, am travelling, capturing
-            moments and playing musical instruments.
+            Technologies. If I'm not on my computer, i'm playing football, doing
+            exercise or reading books.
           </p>
         </div>
       </div>

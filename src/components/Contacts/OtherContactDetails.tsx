@@ -1,5 +1,3 @@
-import React from "react";
-
 function OtherContactDetails() {
   return (
     <>
@@ -37,7 +35,7 @@ function OtherContactDetails() {
           }}
           className="bg-[#fca61f] dark:bg-[#4db5ff]"
         >
-          +2349032328670 / +2348083015143
+          +2348068652575
         </span>
       </h1>
       <br></br>
