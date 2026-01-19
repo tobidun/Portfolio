@@ -1,48 +1,38 @@
 function OtherContactDetails() {
   return (
-    <>
-      <div className="pb-8">
-        <p
-          data-aos="slide-right"
-          data-aos-delay="50"
-          className="text-4xl font-bold inline border-b-4 border-gray-500 dark:text-white text-black"
-        >
-          I'D LOVE TO HEAR FROM YOU
-        </p>
-        <p
-          data-aos="slide-down"
-          data-aos-delay="50"
-          className="py-6 dark:text-white text-black"
-        >
-          If you are interested to hire me I am always open to new opportunities
-          and interesting projects! Feel free to contact me if you have any
-          other requests or questions regarding web development.
+    <div className="space-y-8">
+      <div>
+        <h3 className="text-2xl font-bold mb-4 text-white">
+          Let's talk about everything!
+        </h3>
+        <p className="text-slate-400 leading-relaxed max-w-md">
+          Interested in hiring me or just want to chat? I'm always open to
+          discussing new projects, creative ideas or opportunities to be part of
+          your visions.
         </p>
       </div>
 
-      <h1
-        data-aos="slide-right"
-        data-aos-delay="50"
-        style={{ textAlign: "center" }}
-        className="dark:text-white text-black"
-      >
-        REACH OUT TO ME DIRECTLY ON -{" "}
-        <span
-          style={{
-            color: "white",
-            fontWeight: "bold",
-            fontSize: "1.5rem",
-          }}
-          className="bg-[#fca61f] dark:bg-[#4db5ff]"
-        >
-          +2348068652575
-        </span>
-      </h1>
-      <br></br>
-
-      <h1 style={{ textAlign: "center" }}>OR</h1>
-      <br></br>
-    </>
+      <div className="space-y-4">
+        {[
+          { icon: "📞", label: "Call Me", value: "+234 806 865 2575" },
+          { icon: "📧", label: "Email Me", value: "tobidun5@gmail.com" },
+          { icon: "📍", label: "Location", value: "Abuja, Nigeria" },
+        ].map((item, idx) => (
+          <div
+            key={idx}
+            className="flex items-center gap-4 glass p-4 rounded-2xl border border-white/5"
+          >
+            <span className="text-2xl">{item.icon}</span>
+            <div>
+              <p className="text-xs text-slate-500 uppercase tracking-widest">
+                {item.label}
+              </p>
+              <p className="text-white font-medium">{item.value}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
 

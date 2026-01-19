@@ -4,4 +4,5 @@ export type PortfolioType = {
   link: string;
   name: string;
   disc: string;
+  company: string;
 };

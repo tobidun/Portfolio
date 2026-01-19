@@ -15,28 +15,35 @@ function App() {
   // const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    window.onscroll = function () {
+    const handleScroll = () => {
       scrollBarIndicatorFn();
       NavbarAndButtonFn();
     };
-  });
 
-  // useEffect(() => {
-  //   setInterval(() => setLoading(false), 5000);
-  // }, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
+    let intervalId: NodeJS.Timeout;
     if (modalState === false) {
-      setInterval(() => {
+      intervalId = setInterval(() => {
         if (modal !== null) {
           modal.style.display = "block";
         }
       }, 3000);
     }
+    return () => {
+      if (intervalId) clearInterval(intervalId);
+    };
   }, [modalState]);
 
   useEffect(() => {
-    AOS.init({ duration: 1500 });
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-out-quad",
+    });
   }, []);
 
   // if (loading) return <AppLoader />;

@@ -1,84 +1,174 @@
+import anli from "../../assets/anli.png";
+import dstrct from "../../assets/dstrct.png";
+import ECC from "../../assets/ECC.png";
+import mbc from "../../assets/mbc.png";
+import peakreach from "../../assets/peakreach.png";
+import peernetics from "../../assets/peernetics.png";
+import platterAdmin from "../../assets/platter-admin.png";
+import platterCustomer from "../../assets/platter-customer.png";
+import regis from "../../assets/regis.png";
+import sauri from "../../assets/sauri.png";
+import schoolsql from "../../assets/schoolsql.png";
+import uniti from "../../assets/uniti.png";
+
 import farmeasy from "../../assets/portfolio/farmeasy.png";
 import geek from "../../assets/portfolio/geek.png";
 import houseacq from "../../assets/portfolio/houseacq.png";
-import investyield from "../../assets/portfolio/investyield.png";
-import monsterindia from "../../assets/portfolio/monsterindia.png";
 import omdb from "../../assets/portfolio/omdb.png";
-import paperdaz from "../../assets/portfolio/paperdaz.png";
-import politicsthreadadmin from "../../assets/portfolio/politicsthreaadmin.png";
 import politicthread from "../../assets/portfolio/politicsthread.png";
-import sugarcosmetic from "../../assets/portfolio/sugarcosmetic.png";
 import { PortfolioType } from "../../types/PortfolioType";
 
 export const allPortfolios: PortfolioType[] = [
+  // Dstrct
   {
     id: 1,
-    src: investyield,
-    link: "https://www.investyield.ng/",
-    name: "Invest Yield",
-    disc: "This is a website and app where you can make transactions of money in dollars, naira and other currencies.",
+    src: dstrct,
+    link: "https://excellentcareclinics.nl/",
+    name: "Hospital Management System",
+    disc: "A comprehensive health information system designed for Dstrct, managing patient records, appointment scheduling, and clinical workflows.",
+    company: "Dstrct",
   },
+  // Masterpiece
   {
     id: 2,
-    src: politicthread,
-    link: "https://politicsthread.com/",
-    name: "Politics Thread",
-    disc: "This is a working that allows everyone that comes to the website to express their feeling about politics.",
+    src: platterCustomer,
+    link: "https://investwithplatter.com/",
+    name: "Platter (Customer App)",
+    disc: "Consumer-facing real estate platform for Masterpiece, allowing users to browse and manage property bookings.",
+    company: "Masterpiece",
   },
   {
+    id: 17,
+    src: platterAdmin,
+    link: "https://investwithplatter.com/",
+    name: "Platter (Admin Console)",
+    disc: "Centralized administrative dashboard for Masterpiece to manage real estate listings, users, and transactions.",
+    company: "Masterpiece",
+  },
+  // Starnet technologies
+  {
     id: 3,
-    src: paperdaz,
-    link: "https://paperdaz.com/",
-    name: "Paperdaz",
-    disc: "This is a website which Provide Paperdaz anytime anywhere for clients to complete. Save time and money for everyone!.",
+    src: regis,
+    link: "#",
+    name: "Starnet Academy",
+    disc: "E-learning management system built for Starnet technologies, facilitating course distribution and student progress tracking.",
+    company: "Starnet technologies",
   },
   {
     id: 4,
-    src: houseacq,
-    link: "https://houseacq.com/",
-    name: "House Acq",
-    disc: "This is a website where users can sign up, post house vacancy and see houses that they can book.",
+    src: regis,
+    link: "https://regis-event-crew.vercel.app/",
+    name: "Regis Hospitality Management",
+    disc: "A sophisticated hospitality solution for managing bookings, guest services, and operational logistics.",
+    company: "Starnet technologies",
   },
   {
     id: 5,
-    src: politicsthreadadmin,
-    link: "https://rpt.politicsthread.com/",
-    name: "Politics Thread Admin Dashboard",
-    disc: "This is a website for the admins where they will have to approve the post of each users before it show on the website.",
+    src: mbc,
+    link: "https://www.mbclogix.com/",
+    name: "MBC Logistics",
+    disc: "Supply chain and fleet management application optimized for real-time tracking and delivery coordination.",
+    company: "Starnet technologies",
   },
   {
     id: 6,
-    src: farmeasy,
-    link: "https://ephemeral-visheshsingh-farmeasy.netlify.app/",
-    name: "FarmEasy Clone",
-    disc: "This is a working clone of Pharmeasy website where you can search for any medicine and healthcare products.",
+    src: omdb,
+    link: "#",
+    name: "Whalevault (Telegram Bot)",
+    disc: "Automated Telegram bot for crypto asset monitoring and vault management notifications.",
+    company: "Starnet technologies",
   },
   {
     id: 7,
-    src: sugarcosmetic,
-    link: "https://melodic-malabi-d69a87.netlify.app/",
-    name: "Sugarcosmetic Clone",
-    disc: "This is a working clone of the Sugar Cosmetics website where you can buy beauty products like makeup kits, powder, and brushes.",
+    src: geek,
+    link: "#",
+    name: "Custom Enterprise CRMs",
+    disc: "A suite of three tailored Customer Relationship Management systems focused on sales automation and lead tracking.",
+    company: "Starnet technologies",
   },
+  // Qiit technologies
   {
     id: 8,
-    src: omdb,
-    link: "https://singhvishesh9484.github.io/Asynchronus-movie-app/",
-    name: "Hotstar Mini",
-    disc: "This is mini clone of Hotstar where you can see list of movies and sort them accoring to rating.",
+    src: sauri,
+    link: "https://www.hellosauri.com/",
+    name: "Sauri (Travel Mobile App)",
+    disc: "A mobile-first travel companion application for Qiit technologies, simplifying trip planning and local discovery.",
+    company: "Qiit technologies",
   },
   {
     id: 9,
-    src: geek,
-    link: "https://benevolent-fudge-ac5ed4.netlify.app/",
-    name: "Geekbuying Clone",
-    disc: "This is clone of geekbuying website where you can browse some electric items.",
+    src: anli,
+    link: "https://www.weareanli.com",
+    name: "Anli (Property Management)",
+    disc: "Full-scale property management system for Qiit technologies, handling tenant leases and maintenance requests.",
+    company: "Qiit technologies",
   },
+  // Mis technologies
   {
     id: 10,
-    src: monsterindia,
-    link: "https://monster-india-clone.netlify.app/",
-    name: "monsterindia Clone",
-    disc: "This is a working clone of the monster India website where you can search and get jobs across India.",
+    src: peernetics,
+    link: "https://www.peernetics.io/",
+    name: "Peernetics (Web3 Crypto)",
+    disc: "A decentralized finance (DeFi) application for Mis technologies, focusing on secure peer-to-peer crypto transactions.",
+    company: "Mis technologies",
+  },
+  {
+    id: 11,
+    src: ECC,
+    link: "https://excellentcareclinics.nl/",
+    name: "Lnaid (Educational App)",
+    disc: "An interactive educational platform for Mis technologies, providing structured learning paths and assessment tools.",
+    company: "Mis technologies",
+  },
+  // Peakreach
+  {
+    id: 12,
+    src: peakreach,
+    link: "https://peakreachdelivery.com/",
+    name: "Peakreach Food Delivery",
+    disc: "End-to-end food delivery ecosystem for Peakreach, connecting customers with local restaurants and delivery partners.",
+    company: "Peakreach",
+  },
+  // Spragon technology
+  {
+    id: 13,
+    src: politicthread,
+    link: "https://politicsthread.com/",
+    name: "Politics Thread",
+    disc: "Apolitical discourse platform for Spragon technology, designed for high-engagement discussions and content moderation.",
+    company: "Spragon technology",
+  },
+  {
+    id: 14,
+    src: farmeasy,
+    link: "#",
+    name: "Auto Zard (AI Website)",
+    disc: "AI-driven platform for Spragon technology, leveraging advanced machine learning models for automated content and insights.",
+    company: "Spragon technology",
+  },
+  {
+    id: 15,
+    src: houseacq,
+    link: "https://houseacq.com/",
+    name: "House Acq",
+    disc: "Modern real estate marketplace for Spragon technology, streamlining the process of purchasing and managing residential properties.",
+    company: "Spragon technology",
+  },
+  {
+    id: 16,
+    src: schoolsql,
+    link: "https://schoolsql.com/",
+    name: "SchoolSQL",
+    disc: "Database-centric educational application for schools, managing academic records and administrative data efficiently.",
+    company: "Spragon technology",
+  },
+  // Uniti
+  {
+    id: 18,
+    src: uniti,
+    link: "https://www.unitinetworks.com",
+    name: "Uniti Project",
+    disc: "Innovative technical solution developed for Uniti, emphasizing scalability and user engagement.",
+    company: "Uniti",
   },
 ];

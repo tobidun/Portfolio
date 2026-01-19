@@ -1,5 +1,4 @@
 import { useAppContext } from "../../contexts/useAppContext";
-import BottomSocialLinksForMobile from "./BottomSocialLinksForMobile";
 import SocialLinks from "./SocialLinks";
 
 function AllSocialLinks() {
@@ -9,7 +8,6 @@ function AllSocialLinks() {
       {!showOtherSideBar ? (
         <>
           <SocialLinks />
-          <BottomSocialLinksForMobile />
         </>
       ) : null}
     </>

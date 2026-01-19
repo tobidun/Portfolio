@@ -2,61 +2,73 @@ import { useScrollToComponentContext } from "../../contexts/useScrollToComponent
 
 const About = () => {
   const { ScrollToAboutRef } = useScrollToComponentContext();
+
   return (
-    <div
-      ref={ScrollToAboutRef}
-      className="about_component w-full h-auto  text-white about mb-10 "
-    >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div
-          className="pb-8"
-          data-aos="slide-right"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-        >
-          <p className="text-4xl font-bold inline border-b-4 dark:text-white text-black color-red border-gray-500">
-            About Me
-          </p>
+    <section ref={ScrollToAboutRef} id="about" className="relative">
+      <div className="container">
+        <div className="text-center mb-16" data-aos="fade-up">
+          <span className="text-primary font-medium tracking-wider uppercase text-sm mb-2 block">
+            Discover
+          </span>
+          <h2 className="text-4xl lg:text-5xl font-bold">About Me</h2>
+          <div className="w-20 h-1 bg-primary mx-auto mt-4 rounded-full" />
         </div>
 
-        <div>
-          <p
-            data-aos="zoom-in"
-            data-aos-delay="30"
-            data-aos-duration="700"
-            className="text-xl mt-5 dark:text-white text-black"
-          >
-            Hi there, I'm{" "}
-            <span style={{ color: "tomato" }}>Oluwatobi Abiodun</span> - a
-            Backend Developer. I develop beautiful and user-friendly websites
-            with mind blowing functionalities. I can integrate third party APIs
-            to websites and i can do cloud computing. I like what I’m currently
-            doing (Web Development! and App Development!…).
-          </p>
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="glass-card p-10 rounded-3xl" data-aos="fade-right">
+            <h3 className="text-2xl font-bold mb-6 text-primary">My Journey</h3>
+            <p className="text-slate-300 text-lg leading-relaxed mb-6">
+              Hi, I'm{" "}
+              <span className="text-white font-bold">Oluwatobi Abiodun</span>, a
+              passionate Full Stack Software Engineer dedicated to crafting
+              exceptional digital experiences. My approach combines technical
+              excellence with a deep understanding of user needs.
+            </p>
+            <p className="text-slate-400 leading-relaxed">
+              With a strong foundation in backend architecture and frontend
+              interactivity, I bridge the gap between complex logic and
+              beautiful interfaces. I thrive in collaborative environments and
+              am always eager to tackle new challenges in the ever-evolving tech
+              landscape.
+            </p>
+          </div>
 
-          <br />
-
-          <p
-            data-aos="zoom-out"
-            data-aos-delay="30"
-            data-aos-duration="500"
-            className="text-xl dark:text-white text-black"
-          >
-            Talking about my personality, I describe myself as a{" "}
-            <span style={{ color: "teal" }}>result-oriented </span> person,
-            great <span style={{ color: "teal" }}> team player </span> yet
-            competent solo worker and an{" "}
-            <span style={{ color: "teal" }}>efficient </span> individual. You
-            can image me as a <span style={{ color: "teal" }}>diligent</span>{" "}
-            and <span style={{ color: "teal" }}>easygoing</span> person with a
-            good sense of humour.
-            <br /> <br />I enjoy designing new stuff and learning new
-            Technologies. If I'm not on my computer, i'm playing football, doing
-            exercise or reading books.
-          </p>
+          <div className="grid grid-cols-2 gap-6" data-aos="fade-left">
+            {[
+              {
+                label: "Result-Oriented",
+                icon: "🚀",
+                desc: "Focused on delivering high-quality, measurable outcomes.",
+              },
+              {
+                label: "Team Player",
+                icon: "🤝",
+                desc: "Collaborative mindset with excellent communication skills.",
+              },
+              {
+                label: "Cloud Expert",
+                icon: "☁️",
+                desc: "Experienced in AWS and cloud-native architectures.",
+              },
+              {
+                label: "Lifelong Learner",
+                icon: "🧠",
+                desc: "Constantly updating my stack with modern technologies.",
+              },
+            ].map((trait, index) => (
+              <div
+                key={index}
+                className="glass border border-white/5 p-6 rounded-2xl hover:border-primary/30 transition-all duration-300"
+              >
+                <span className="text-3xl mb-4 block">{trait.icon}</span>
+                <h4 className="font-bold text-white mb-2">{trait.label}</h4>
+                <p className="text-xs text-slate-400">{trait.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

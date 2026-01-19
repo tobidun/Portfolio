@@ -20,54 +20,64 @@ function SendMailForm() {
         e.target.reset();
       }, 500);
     } else {
-      alert("value can't be empty");
+      alert("Please fill in all fields.");
     }
   }
+
   return (
-    <div className=" flex justify-center items-center">
+    <div className="glass-card p-8 rounded-3xl border border-white/5 shadow-xl">
       <form
         onSubmit={handleSubmit}
         name="contact"
         method="POST"
         action="https://getform.io/f/5d3543d6-d1df-4039-8d76-daef9bb0d17f"
-        className=" flex flex-col w-full md:w-1/2"
+        className="space-y-6"
       >
-        <input
-          data-aos="zoom-in"
-          data-aos-delay="30"
-          type="text"
-          name="name"
-          placeholder="Enter your name"
-          required
-          onChange={handleChange}
-          className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-        />
-        <input
-          data-aos="slide-right"
-          data-aos-delay="40"
-          type="email"
-          name="email"
-          placeholder="Enter your email"
-          required
-          onChange={handleChange}
-          className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-        />
-        <textarea
-          data-aos="fade-up"
-          data-aos-delay="50"
-          name="message"
-          placeholder="Enter your message"
-          rows={10}
-          required
-          onChange={handleChange}
-          className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-        ></textarea>
+        <div>
+          <label className="text-xs uppercase tracking-widest text-slate-500 mb-2 block font-bold">
+            Name
+          </label>
+          <input
+            type="text"
+            name="name"
+            placeholder="What's your name?"
+            required
+            onChange={handleChange}
+            className="w-full px-5 py-4 rounded-xl bg-slate-900/50 border border-white/10 text-white focus:outline-none focus:border-primary transition-all duration-300"
+          />
+        </div>
+
+        <div>
+          <label className="text-xs uppercase tracking-widest text-slate-500 mb-2 block font-bold">
+            Email Address
+          </label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email address"
+            required
+            onChange={handleChange}
+            className="w-full px-5 py-4 rounded-xl bg-slate-900/50 border border-white/10 text-white focus:outline-none focus:border-primary transition-all duration-300"
+          />
+        </div>
+
+        <div>
+          <label className="text-xs uppercase tracking-widest text-slate-500 mb-2 block font-bold">
+            Message
+          </label>
+          <textarea
+            name="message"
+            placeholder="Tell me about your project..."
+            rows={5}
+            required
+            onChange={handleChange}
+            className="w-full px-5 py-4 rounded-xl bg-slate-900/50 border border-white/10 text-white focus:outline-none focus:border-primary transition-all duration-300 resize-none"
+          ></textarea>
+        </div>
 
         <button
-          data-aos="slide-down"
-          data-aos-delay="60"
           type="submit"
-          className="text-white bg-[#fca61f] dark:bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
+          className="w-full py-4 rounded-xl bg-primary text-slate-900 font-bold hover:bg-white transition-all duration-300 shadow-lg shadow-primary/20"
         >
           Send Message
         </button>

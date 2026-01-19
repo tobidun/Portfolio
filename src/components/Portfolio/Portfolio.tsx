@@ -3,38 +3,26 @@ import AllPortfolios from "./AllPortfolios";
 
 const Portfolio = () => {
   const { ScrollToPortfoliosRef } = useScrollToComponentContext();
+
   return (
-    <div
-      ref={ScrollToPortfoliosRef}
-      className="portfolio_component w-full text-white md:h-screen portfolio"
-    >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
-          <div
-            data-aos="slide-right"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-          >
-            <p className="text-4xl font-bold inline border-b-4 border-gray-500 dark:text-white text-black">
-              Portfolio
-            </p>
-          </div>
-          <p
-            data-aos="fade-up"
-            data-aos-delay="30"
-            data-aos-duration="700"
-            className="py-6 dark:text-white text-black"
-          >
-            I have spent a lot of time on different projects. I love doing
-            everything from scratch. Here are some of my favorite ones which sum
-            up my knowledge. I have done many small projects from different
-            courses and challenges to learn the basics. You can click on the
-            demo to view.
+    <section ref={ScrollToPortfoliosRef} id="portfolio" className="relative">
+      <div className="container">
+        <div className="text-center mb-16" data-aos="fade-up">
+          <span className="text-primary font-medium tracking-wider uppercase text-sm mb-2 block">
+            Portfolio
+          </span>
+          <h2 className="text-4xl lg:text-5xl font-bold">Featured Projects</h2>
+          <div className="w-20 h-1 bg-primary mx-auto mt-4 rounded-full" />
+          <p className="mt-8 text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
+            A selection of my recent works, ranging from complex backend
+            architectures to interactive frontend experiences. Each project
+            represents a unique challenge solved.
           </p>
         </div>
+
         <AllPortfolios />
       </div>
-    </div>
+    </section>
   );
 };
 
