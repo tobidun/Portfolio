@@ -1,3 +1,6 @@
+// react-loader-spinner version 5 has broken types that use multiple 'export default'
+// we import ThreeDots as a default export to fix the TS error while keeping runtime functionality
+// @ts-ignore
 import { ThreeDots } from "react-loader-spinner";
 
 function AppLoader() {

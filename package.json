@@ -1,5 +1,5 @@
 {
-  "name": "fkt-portfolio",
+  "name": "oluwatobi-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -55,6 +55,6 @@
     "tailwindcss": "^3.2.7"
   },
   "engines": {
-    "node": "24.x"
+    "node": ">=20 <24"
   }
 }
