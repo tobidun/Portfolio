@@ -11,7 +11,7 @@ import WelcomeModal from "../components/WelcomeModal/WelcomeModal";
 
 function MainPage() {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen overflow-x-hidden">
       <div className="bg-mesh" />
       <NavBar />
       <Home />

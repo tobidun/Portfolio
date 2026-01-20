@@ -59,19 +59,19 @@ function AllPortfolios() {
                 />
               </div>
 
-              <div className="p-8 flex flex-col flex-grow">
+              <div className="p-6 md:p-8 flex flex-col flex-grow">
                 <div className="mb-4">
-                  <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors">
+                  <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-primary transition-colors">
                     {name}
                   </h3>
                 </div>
-                <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
+                <p className="text-slate-400 text-xs md:text-sm leading-relaxed mb-6 md:mb-8 flex-grow">
                   {disc}
                 </p>
                 <div className="mt-auto">
                   <button
                     onClick={() => window.open(link, "_blank")}
-                    className="w-full py-3 rounded-xl border border-white/10 group-hover:border-primary/50 group-hover:bg-primary/5 text-white group-hover:text-primary font-bold text-sm tracking-wide flex items-center justify-center gap-2 transition-all duration-300"
+                    className="w-full py-2.5 md:py-3 rounded-xl border border-white/10 group-hover:border-primary/50 group-hover:bg-primary/5 text-white group-hover:text-primary font-bold text-xs md:text-sm tracking-wide flex items-center justify-center gap-2 transition-all duration-300"
                   >
                     Explore Project
                     <FiExternalLink

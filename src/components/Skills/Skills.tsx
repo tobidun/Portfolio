@@ -52,15 +52,15 @@ const Skills = () => {
           <div className="w-20 h-1 bg-primary mx-auto mt-4 rounded-full" />
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6 md:gap-8">
           {skillCategories.map((category, idx) => (
             <div
               key={idx}
-              className="glass-card p-8 rounded-3xl border border-white/5 hover:border-primary/20"
+              className="glass-card p-6 md:p-8 rounded-3xl border border-white/5 hover:border-primary/20"
               data-aos="fade-up"
               data-aos-delay={idx * 100}
             >
-              <h3 className="text-xl font-bold mb-6 text-white text-center pb-4 border-b border-white/10 uppercase tracking-widest text-sm">
+              <h3 className="text-lg md:text-xl font-bold mb-6 text-white text-center pb-4 border-b border-white/10 uppercase tracking-widest text-xs md:text-sm">
                 {category.title}
               </h3>
               <div className="flex flex-wrap gap-3 justify-center">

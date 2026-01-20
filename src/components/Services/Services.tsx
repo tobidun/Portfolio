@@ -62,15 +62,17 @@ const Services = () => {
               key={idx}
               data-aos="fade-up"
               data-aos-delay={idx * 100}
-              className="glass p-10 rounded-3xl border border-white/5 hover:border-primary/30 transition-all duration-500 group"
+              className="glass p-8 md:p-10 rounded-3xl border border-white/5 hover:border-primary/30 transition-all duration-500 group"
             >
-              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-3xl text-primary mb-8 group-hover:bg-primary group-hover:text-slate-900 transition-all duration-500">
+              <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-2xl md:text-3xl text-primary mb-6 md:mb-8 group-hover:bg-primary group-hover:text-slate-900 transition-all duration-500">
                 {service.icon}
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors">
+              <h3 className="text-xl md:text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors">
                 {service.title}
               </h3>
-              <p className="text-slate-400 leading-relaxed">{service.desc}</p>
+              <p className="text-slate-400 text-sm md:text-base leading-relaxed">
+                {service.desc}
+              </p>
             </div>
           ))}
         </div>

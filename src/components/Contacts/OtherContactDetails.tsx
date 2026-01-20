@@ -27,7 +27,7 @@ function OtherContactDetails() {
               <p className="text-xs text-slate-500 uppercase tracking-widest">
                 {item.label}
               </p>
-              <p className="text-white font-medium">{item.value}</p>
+              <p className="text-white font-medium break-all">{item.value}</p>
             </div>
           </div>
         ))}

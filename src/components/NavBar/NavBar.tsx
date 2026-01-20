@@ -36,7 +36,7 @@ const NavBar = () => {
       >
         <div className="flex items-center">
           <h1
-            className="text-2xl font-bold bg-gradient-to-r from-primary to-white bg-clip-text text-transparent cursor-pointer"
+            className="text-xl md:text-2xl font-bold bg-gradient-to-r from-primary to-white bg-clip-text text-transparent cursor-pointer whitespace-nowrap"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
             Oluwatobi Abiodun

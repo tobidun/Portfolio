@@ -15,16 +15,21 @@ const About = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="glass-card p-10 rounded-3xl" data-aos="fade-right">
-            <h3 className="text-2xl font-bold mb-6 text-primary">My Journey</h3>
-            <p className="text-slate-300 text-lg leading-relaxed mb-6">
+          <div
+            className="glass-card p-6 md:p-10 rounded-3xl"
+            data-aos="fade-right"
+          >
+            <h3 className="text-xl md:text-2xl font-bold mb-6 text-primary">
+              My Journey
+            </h3>
+            <p className="text-slate-300 text-base md:text-lg leading-relaxed mb-6">
               Hi, I'm{" "}
               <span className="text-white font-bold">Oluwatobi Abiodun</span>, a
               passionate Full Stack Software Engineer dedicated to crafting
               exceptional digital experiences. My approach combines technical
               excellence with a deep understanding of user needs.
             </p>
-            <p className="text-slate-400 leading-relaxed">
+            <p className="text-slate-400 text-sm md:text-base leading-relaxed">
               With a strong foundation in backend architecture and frontend
               interactivity, I bridge the gap between complex logic and
               beautiful interfaces. I thrive in collaborative environments and
@@ -33,7 +38,10 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-6" data-aos="fade-left">
+          <div
+            className="grid grid-cols-1 md:grid-cols-2 gap-6"
+            data-aos="fade-left"
+          >
             {[
               {
                 label: "Result-Oriented",

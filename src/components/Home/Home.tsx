@@ -19,17 +19,17 @@ const Home = () => {
           className="text-center md:text-left order-2 md:order-1"
           data-aos="fade-right"
         >
-          <span className="text-primary font-medium tracking-wider uppercase text-sm mb-4 block">
+          <span className="text-primary font-medium tracking-wider uppercase text-xs md:text-sm mb-4 block">
             Welcome to my portfolio
           </span>
-          <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
             Hi, I'm <br />
             <span className="hero-gradient">Oluwatobi Abiodun</span>
           </h1>
-          <h2 className="text-2xl lg:text-3xl font-semibold text-slate-300 mb-8">
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-slate-300 mb-8">
             Full Stack Software Engineer
           </h2>
-          <p className="text-slate-400 text-lg mb-10 max-w-lg leading-relaxed">
+          <p className="text-slate-400 text-base md:text-lg mb-10 max-w-lg leading-relaxed">
             I build high-performance, scalable, and user-centric web
             applications. Specializing in Node.js, React, and Cloud
             Architectures.

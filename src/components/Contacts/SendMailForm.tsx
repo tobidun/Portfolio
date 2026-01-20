@@ -25,7 +25,7 @@ function SendMailForm() {
   }
 
   return (
-    <div className="glass-card p-8 rounded-3xl border border-white/5 shadow-xl">
+    <div className="glass-card p-6 md:p-8 rounded-3xl border border-white/5 shadow-xl">
       <form
         onSubmit={handleSubmit}
         name="contact"
